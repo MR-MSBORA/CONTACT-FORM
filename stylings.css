@@ -1,0 +1,146 @@
+
+.back{
+    background-color: rgba(214, 244, 234, 0.827);
+    padding: 5% 32%;
+    z-index: 0;
+    height: 150%;
+}
+.container{
+    z-index: 1;
+    background-color: white;
+    border: 2px ;
+    box-shadow:0px 1px 5px 0px rgb(0,0,0);
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-family: karla;
+    font-size: 23px;
+}
+input{
+  width:96%;
+  padding:5px;
+  border-radius:5px;
+  margin:0px;
+  display:block;
+  border:1px solid black;
+}
+.fname, .lname{
+    font-size: 15px;
+    display: inline-block;
+    width: 45%;
+    max-width: 46%;
+    box-sizing: 46%;
+    line-height:30px;
+}
+.fname{
+  padding-right:30px;
+}
+.mail{
+  font-size:15px;
+  display:inline;
+  width:90%;
+}
+
+.general{
+    font-size: 15px;
+    display: inline-block;
+    width: 45%;
+    max-width: 46%;
+    box-sizing: 46%;
+    line-height:30px;
+  font-size
+}
+.query{
+  display:inline-block;
+  width:100%;
+}
+.query p{
+  margin:12px 0px;
+  display:flex;
+  font-size:14px;
+}
+.general{
+  width:40%;
+  max-width:46%;
+  border:1px solid black;
+  border-radius:5px;
+  padding:5px 15px;
+  display:inline-flex;
+  align-item:center;
+  text-align:left;
+  font-size:14px;
+}
+.general input{
+  width:18px;
+  height:20px;
+  display:inline-block;
+  font-size:15px;
+  margin-right:5px;
+  margin-top:5px;
+  align-items:bottom;
+}
+#gi{
+  margin-right:20px;
+}
+.message textarea{
+  width:100%;
+  max-width:100%
+  border-radius:5px;
+  height:80px;
+}
+.message{
+  font-size:14px;
+  margin-bottom:20px;
+}
+.footer input{
+  width:12px;
+  height:10px;
+  display:inline-block;
+  font-size:15px;
+  margin-right:10px;
+  margin-top:3px;
+  border-radius:0px;
+}
+.footer{
+  font-size:12px;
+  display:flex;
+  justify-content:left;
+  margin-bottom:25px;
+}
+button{
+  background-color:hsl(147, 42%, 38%);
+  color:white;
+  display:flex;
+  width:100%;
+  justify-content:center;
+  border-radius:5px;
+  padding:10px 5px;
+  margin-bottom:10px;
+  border: none;
+}
+button:hover{
+    background-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+input:hover{
+    cursor: pointer;
+    border: 2px solid hsl(169, 82%, 27%);
+}
+
+input:valid{
+  border:2px solid  hsl(169, 82%, 27%);
+}
+
+@media screen and (max-width:600px)
+{
+  .back{
+    padding:5% 10%;
+    cursor:pointer;
+  }
+  .general {
+    font-size:13px;
+  }
+  .input:hover{
+    cursor: pointer;
+    border: 1px solid hsl(169, 82%, 27%);
+  }
+}

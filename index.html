@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="script" href="html.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylings.css">
+</head>
+<body>
+<div class="back">
+  <div class="container">
+    <form action="" onsubmit="return validation()" name="myform">
+      <h2>Contact Us</h2>
+
+      <div class="name">
+               <div class="fname">
+                  <label for="fname">First Name</label><br>
+                  <input type="text" name="fname" >
+                  <p id="error1"></p>
+               </div>
+
+               <div class="lname">
+                  <label for="lname">Last Name</label><br>
+                  <input type="text" name="lname" required>
+                  <p id="error2"></p>
+               </div>
+      </div>
+      <div class="mail">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required>
+        <p id="error3"></p>
+      </div>
+
+      <div class="query">
+        <p>Query Type</p>
+        <div class="general" id="gi">
+         <input type="radio" name="general" required>General Query
+        </div>
+         <div class="general" >
+          <input type="radio" name="general" required>Support Request
+         </div>
+         <p id="error4"></p>
+      </div>
+      <div class="message">
+        <p>Message</p>
+        <textarea></textarea required>
+        <p id="error5"></p>
+      </div>
+
+      <div class="footer">
+        <input type="checkbox" name="consent" required>
+        <label for="consent">I consent to being contacted by the team</label>
+        <p id="error6"></p>
+      </div>
+      <button type="submit" onclick="submitDone()">Submit</button>
+      <div class="popup" id="popup">
+        <img src="">
+        <p>Message Sent</p>
+        
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  function submitDone()
+{
+   alert("Message Sent");
+}
+</script>
+</body>
+</html>
